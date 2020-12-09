@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="555350ce-d40d-49c0-8e1a-290460a04ceb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jPTdAgZrANi3c7YVhyJsZMccJ8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.obroom.plugin.mybatislog.running" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../XSYX/generatorSqlmapCustom" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.flying.cattle.mdg.gonggongwenjian" />
+      <recent name="freemarker.ftl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MyGenerator">
+    <configuration name="MyGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.flying.cattle.mdg.MyGenerator" />
+      <module name="mybatis-dsc-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flying.cattle.mdg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="entity.ftl" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mybatis-dsc-generator/freemarker/ftl/entity.ftl" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyGenerator" />
+        <item itemvalue="JavaScript Debug.entity.ftl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="555350ce-d40d-49c0-8e1a-290460a04ceb" name="Default Changelist" comment="" />
+      <created>1603704811796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603704811796</updated>
+      <workItem from="1603704812900" duration="112000" />
+      <workItem from="1603759644038" duration="3622000" />
+      <workItem from="1603847090502" duration="3294000" />
+      <workItem from="1604473805134" duration="1841000" />
+      <workItem from="1604539141304" duration="599000" />
+      <workItem from="1604543354726" duration="7896000" />
+      <workItem from="1604563227755" duration="3496000" />
+      <workItem from="1604567366864" duration="2155000" />
+      <workItem from="1604624434947" duration="5071000" />
+      <workItem from="1604634060365" duration="364000" />
+      <workItem from="1604634467455" duration="12000" />
+      <workItem from="1604634649994" duration="9181000" />
+      <workItem from="1604711097387" duration="2539000" />
+      <workItem from="1604720922145" duration="6118000" />
+      <workItem from="1604884581386" duration="1389000" />
+      <workItem from="1604903992221" duration="307000" />
+      <workItem from="1604904746398" duration="2680000" />
+      <workItem from="1604970418157" duration="2112000" />
+      <workItem from="1604989486983" duration="626000" />
+      <workItem from="1605057631851" duration="2316000" />
+      <workItem from="1605061952990" duration="3427000" />
+      <workItem from="1605143274568" duration="3343000" />
+      <workItem from="1605230144209" duration="4304000" />
+      <workItem from="1605315973242" duration="595000" />
+      <workItem from="1605489259163" duration="1194000" />
+      <workItem from="1605516481857" duration="736000" />
+      <workItem from="1605679003776" duration="3689000" />
+      <workItem from="1605747457461" duration="2474000" />
+      <workItem from="1605834081112" duration="3196000" />
+      <workItem from="1605843185963" duration="2793000" />
+      <workItem from="1606094226110" duration="3965000" />
+      <workItem from="1606180825263" duration="1198000" />
+      <workItem from="1606351928061" duration="21000" />
+      <workItem from="1606444565648" duration="970000" />
+      <workItem from="1606468374660" duration="599000" />
+      <workItem from="1606784832174" duration="1517000" />
+      <workItem from="1606794475636" duration="1368000" />
+      <workItem from="1606871615899" duration="659000" />
+      <workItem from="1607398026488" duration="6381000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="698" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607422380372">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="698" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607422380372" />
+    <state width="838" height="466" key="DebuggerActiveHint" timestamp="1604547557549">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="838" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1604547557549" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607414930781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607414930781" />
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom" timestamp="1607421769425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607421769425" />
+    <state width="1877" height="341" key="GridCell.Tab.0.center" timestamp="1607421769425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607421769425" />
+    <state width="1877" height="341" key="GridCell.Tab.0.left" timestamp="1607421769424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607421769424" />
+    <state width="1877" height="341" key="GridCell.Tab.0.right" timestamp="1607421769425">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="341" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607421769425" />
+    <state width="1877" height="420" key="GridCell.Tab.1.bottom" timestamp="1605065560184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="420" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605065560184" />
+    <state width="1877" height="420" key="GridCell.Tab.1.center" timestamp="1605065560183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="420" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605065560183" />
+    <state width="1877" height="420" key="GridCell.Tab.1.left" timestamp="1605065560183">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="420" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605065560183" />
+    <state width="1877" height="420" key="GridCell.Tab.1.right" timestamp="1605065560184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="420" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605065560184" />
+    <state x="662" y="223" width="596" height="618" key="find.popup" timestamp="1607423066659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="223" width="596" height="618" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607423066659" />
+    <state x="931" y="278" width="700" height="530" key="recent.locations.popup" timestamp="1603847700248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="931" y="278" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603847700248" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607422587182">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607422587182" />
+  </component>
+</project>

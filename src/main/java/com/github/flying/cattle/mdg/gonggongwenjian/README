@@ -1,0 +1,49 @@
+把gonggongwenjian(公共文件)目录下的文件复制到自己项目的文件夹即可
+
+以下是一些jar包放到自己项目的pom文件
+------------------------------POM文件需配置的jar包-------------------------------------
+<!-- 通用mapper逆向工具 -->
+<dependency>
+    <groupId>tk.mybatis</groupId>
+    <artifactId>mapper-spring-boot-starter</artifactId>
+    <version>2.1.5</version>
+</dependency>
+<dependency>
+    <groupId>tk.mybatis</groupId>
+    <artifactId>mapper-base</artifactId>
+    <version>1.1.5</version>
+</dependency>
+<!-- swagger2 配置 -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+    <exclusions>
+        <exclusion>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-models</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
+<dependency>
+    <groupId>io.swagger</groupId>
+    <artifactId>swagger-models</artifactId>
+    <version>1.5.22</version>
+</dependency>
+
+------------------------------POM文件需配置的jar包-------------------------------------
+
+
+
+
+
+
+
+
+
+
