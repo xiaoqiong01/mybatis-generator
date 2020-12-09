@@ -57,8 +57,8 @@ public class ${entityName}Controller {
     @ApiImplicitParam(paramType="query", name = "id", value = "对象id", required = true, dataType = "Long")
     </#if>
     public CommonResult<${entityName}> getById(Long id){
-    ${entityName} obj= ${objectName}Service.getById(id);
-    return null!=obj ? CommonResult.success(obj) : CommonResult.error("查询对象不存在！");
+        ${entityName} obj= ${objectName}Service.getById(id);
+        return null!=obj ? CommonResult.success(obj) : CommonResult.error("查询对象不存在！");
     }
 
 
