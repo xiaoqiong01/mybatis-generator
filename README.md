@@ -1,5 +1,5 @@
 我是根据gitHub上线程的项目改编，以下这段话属于原作者原话：
-有需要的朋友直接修改 MyGenerator.java 文件即可使用
+有需要的朋友直接修改 MyGenerator.java （）文件即可使用
 ---------------------------------------------------------------------
 <p align="center">
 	<img src="https://oscimg.oschina.net/oscnet/7bccb4d805f683659d4f0ab1ef1a85edaa3.jpg" ></img>
@@ -17,7 +17,7 @@
     </a>
 </p>
 
-# mybatis-dsc-generator
+# mybatis-generator
 完美集成lombok，swagger的代码生成工具，让你不再为繁琐的注释和简单的接口实现而烦恼：entity集成，格式校验，swagger; dao自动加@ mapper，service自动注释和依赖; 控制器实现单表的增副改查，并集成swagger实现api文档。如果有缘看见，期望得到你的star，very thx.
 # 源码地址
 - GitHub:https://github.com/flying-cattle/mybatis-dsc-generator
@@ -32,7 +32,6 @@
     <version>2.1.0.RELEASE</version>
 </dependency>
 ```
-3.0.0后的版本是集成了Mybatis-plus版本——源码分支mybatisPlus
 ``` xml
 <dependency>
   <groupId>com.github.flying-cattle</groupId>
