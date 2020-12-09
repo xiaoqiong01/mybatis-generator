@@ -81,7 +81,7 @@ public class ${entityName}Controller {
     public CommonResult insert(@RequestBody ${entityName} entity){
         if (null!=entity) {
             boolean rsg = ${objectName}Service.save(entity);
-            return rsg ? CommonResult.success(null) : CommonResult.error("添加失败！");
+            return rsg ? CommonResult.success() : CommonResult.error("添加失败！");
         }else {
             return CommonResult.error("请传入正确参数！");
         }
@@ -95,7 +95,7 @@ public class ${entityName}Controller {
     @ApiImplicitParam(paramType="query", name = "id", value = "对象id", required = true, dataType = "Long")
     public CommonResult deleteById(Long id){
         boolean rsg = ${objectName}Service.deleteById(id);
-        return rsg ? CommonResult.success(null) : CommonResult.error("删除失败！");
+        return rsg ? CommonResult.success() : CommonResult.error("删除失败！");
     }
 
 
@@ -114,7 +114,7 @@ public class ${entityName}Controller {
     public CommonResult update(@RequestBody ${entityName} entity){
         if (null!=entity) {
             boolean rsg = ${objectName}Service.updateByEntity(entity);
-            return rsg ? CommonResult.success(null) : CommonResult.error("修改失败！");
+            return rsg ? CommonResult.success() : CommonResult.error("修改失败！");
         }else {
             return CommonResult.error("请传入正确参数！");
         }
