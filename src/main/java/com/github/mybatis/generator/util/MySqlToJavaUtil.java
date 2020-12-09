@@ -1,5 +1,5 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.util;
@@ -8,7 +8,7 @@ import com.github.mybatis.generator.convert.DateType;
 import com.github.mybatis.generator.convert.MySqlTypeConvert;
 /**
  * 说明： 获取java中需要的驼峰命名
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 public class MySqlToJavaUtil {

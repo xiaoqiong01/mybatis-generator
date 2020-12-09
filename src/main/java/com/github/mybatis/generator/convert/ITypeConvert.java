@@ -1,25 +1,18 @@
-/**   
- * Copyright © 2019 dream horse Info. Tech Ltd. All rights reserved.
- *
- * https://www.apache.org/licenses/LICENSE-2.0
- *
- * @Package: com.github.mybatis.fl.convert
- * @author: flying-cattle  
- * @date: 2019年4月9日 下午8:06:16 
+/**
+ * @author:   
+ * @date: 2020年12月9日 上午9:06:16
  */
 package com.github.mybatis.generator.convert;
 
-/**   
-* Copyright: Copyright (c) 2019 
-* 
+/**
 * 说明: 该类的功能描述
 * @version: v3.0.0
-* @author: flying-cattle
+* @author: 
 *
 * Modification History:
 * Date         		Author          Version          Description
 *---------------------------------------------------------------*
-* 2019年4月9日      		flying-cattle   v3.0.0           initialize
+* 2020年12月9日      		   v3.0.0           initialize
 */
 public interface ITypeConvert {
 	/**

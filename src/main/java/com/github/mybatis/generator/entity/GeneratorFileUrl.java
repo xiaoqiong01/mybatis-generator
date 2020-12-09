@@ -1,5 +1,5 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.entity;
@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 /**
  * 说明： 自动生成文件路径
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 @Data

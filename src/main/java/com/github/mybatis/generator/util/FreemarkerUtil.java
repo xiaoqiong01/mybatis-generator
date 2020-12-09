@@ -1,5 +1,5 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.util;
@@ -15,7 +15,7 @@ import java.io.IOException;
 
 /**
  * 说明：  创建文件
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 public class FreemarkerUtil {

@@ -1,8 +1,8 @@
 package com.github.mybatis.generator.gonggongwenjian;
 
 /*
- * @author xiaoqiong
- * @Date : 2020年10月31日 15:32
+ * @author
+ * @Date : 2020年12月09日 15:32
  */
 public enum CommonEnum {
 

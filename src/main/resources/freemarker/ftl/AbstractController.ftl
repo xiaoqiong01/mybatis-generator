@@ -17,9 +17,7 @@ import io.swagger.annotations.ApiOperation;
 
 /**
  * ${entityComment}API接口层
- * frxs Inc.  湖南兴盛优选电子商务有限公司.
- * Copyright (c) 2017-2019. All Rights Reserved.
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 public class AbstractController<S extends IService<T>,T>{
@@ -31,9 +29,7 @@ public class AbstractController<S extends IService<T>,T>{
 	/**
 	 * @explain 查询对象  <swagger GET请求>
 	 * @param   对象参数：id
-	 * frxs Inc.  湖南兴盛优选电子商务有限公司.
-	 * Copyright (c) 2017-2019. All Rights Reserved.
-	 * @author XiaoQiong
+	 * @author
 	 * @Date ${createTime}
 	 *
 	 */
@@ -56,9 +52,7 @@ public class AbstractController<S extends IService<T>,T>{
 	 * @explain 删除对象
 	 * @param   对象参数：id
 	 * @return  JsonResult
-	* frxs Inc.  湖南兴盛优选电子商务有限公司.
-	* Copyright (c) 2017-2019. All Rights Reserved.
-	* @author XiaoQiong
+	* @author
 	* @Date ${createTime}
 	*
 	 */
@@ -87,9 +81,7 @@ public class AbstractController<S extends IService<T>,T>{
 	 * @explain 添加
 	 * @param   对象参数：T
 	 * @return  Boolean
-	* frxs Inc.  湖南兴盛优选电子商务有限公司.
-	* Copyright (c) 2017-2019. All Rights Reserved.
-	* @author XiaoQiong
+	* @author
 	* @Date ${createTime}
 	*
 	 */
@@ -116,9 +108,7 @@ public class AbstractController<S extends IService<T>,T>{
 	 * @explain 修改
 	 * @param   对象参数：T
 	 * @return  Boolean
-	* frxs Inc.  湖南兴盛优选电子商务有限公司.
-	* Copyright (c) 2017-2019. All Rights Reserved.
-	* @author XiaoQiong
+	* @author
 	* @Date ${createTime}
 	*
 	 */
@@ -145,9 +135,7 @@ public class AbstractController<S extends IService<T>,T>{
 	 * @explain 分页条件查询用户   
 	 * @param   对象参数：AppPage<${entityName}>
 	 * @return  PageInfo<${entityName}>
-	* frxs Inc.  湖南兴盛优选电子商务有限公司.
-	* Copyright (c) 2017-2019. All Rights Reserved.
-	* @author XiaoQiong
+	* @author
 	* @Date ${createTime}
 	*
 	 */

@@ -1,21 +1,21 @@
 /**   
- * Copyright © 2019 dream horse Info. Tech Ltd. All rights reserved.
- * @author XiaoQiong
+ * Copyright © 2020 dream horse Info. Tech Ltd. All rights reserved.
+ * @author
  * @Date ${createTime}
  *
  */
 package com.github.mybatis.generator.aid;
 
-import java.io.Serializable;
-import java.net.ConnectException;
-import java.sql.SQLException;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+import java.net.ConnectException;
+import java.sql.SQLException;
+
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  *
  */

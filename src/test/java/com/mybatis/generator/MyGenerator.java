@@ -1,9 +1,3 @@
-/**
- * @filename:UserController 2019年4月9日
- * @project wallet-manage  V1.0
- * Copyright(c) 2018 flying-cattle Co. Ltd. 
- * All right reserved. 
- */
 package com.mybatis.generator;
 
 import com.github.mybatis.generator.entity.BasisInfo;
@@ -16,28 +10,27 @@ import java.util.Date;
 
 public class MyGenerator {
 		// 基础信息：项目名、作者、版本
-		public static final String PROJECT = "archery";
+		public static final String PROJECT = "project";
 		public static final String AUTHOR = "xiaoqiong";
 		public static final String VERSION = "V1.0";
 		// 数据库连接信息：连接URL、用户名、秘密、数据库名information_schema
-//		public static final String URL = "jdbc:mysql://172.16.7.227:3306/?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=true&serverTimezone=UTC";
-		public static final String URL = "jdbc:mysql://172.16.7.227:3306/JAcheryTest?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=true&serverTimezone=UTC";
-		public static final String NAME = "lookup";
-		public static final String PASS = "lookup@2018frxs";
-		public static final String DATABASE = "JAcheryTest";
+		public static final String URL = "jdbc:mysql://127.0.0.1:3306/databaseName?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=true&serverTimezone=UTC";
+		public static final String NAME = "root";
+		public static final String PASS = "123456";
+		public static final String DATABASE = "databaseName";
 		// 类信息：类名、对象名（一般是【类名】的首字母小些）、类说明、时间
 		//public static final String CLASSNAME = "";
-		public static final String TABLE = "t_ins_info";
-		public static final String CLASSCOMMENT = "实例信息";
-		public static final String TIME = "2020年12月8日";
+		public static final String TABLE = "t_user_info";
+		public static final String CLASSCOMMENT = "用户信息信息";
+		public static final String TIME = "2020年12月9日";
 		public static final String AGILE = new Date().getTime() + "";
 		// 路径信息，分开路径方便聚合工程项目，微服务项目
-		public static final String ENTITY_URL = "com.xsyx.dms.dbinstance.domain";
-		public static final String DAO_URL = "com.xsyx.dms.dbinstance.mapper";
-		public static final String XML_URL = "com.xsyx.dms.dbinstance.mapper.impl";
-		public static final String SERVICE_URL = "com.xsyx.dms.dbinstance.service";
-		public static final String SERVICE_IMPL_URL = "com.xsyx.dms.dbinstance.service.impl";
-		public static final String CONTROLLER_URL = "com.xsyx.dms.dbinstance.controller";
+		public static final String ENTITY_URL = "com.mybatis.domain";
+		public static final String DAO_URL = "com.mybatis.mapper";
+		public static final String XML_URL = "com.mybatis.mapper.impl";
+		public static final String SERVICE_URL = "com.mybatis.service";
+		public static final String SERVICE_IMPL_URL = "com.mybatis.service.impl";
+		public static final String CONTROLLER_URL = "com.mybatis.controller";
 		//是否是Swagger配置
 		public static final String IS_SWAGGER = "true";
 //	    public static final String IS_SWAGGER = "false";

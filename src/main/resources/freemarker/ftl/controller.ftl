@@ -19,9 +19,7 @@ import javax.annotation.Resource;
 
 /**
  * ${entityComment}Controller层
- * frxs Inc.  湖南兴盛优选电子商务有限公司.
- * Copyright (c) 2017-2019. All Rights Reserved.
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  */
 <#if isSwagger=="true" >

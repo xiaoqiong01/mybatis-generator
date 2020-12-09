@@ -1,11 +1,11 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.convert;
 
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 public class MySqlTypeConvert  implements ITypeConvert {

@@ -1,8 +1,8 @@
 package com.github.mybatis.generator.gonggongwenjian;
 
 /**
- * @author xiaoqiong
- * @Date : 2020年11月03日 11:48
+ * @author
+ * @Date : 2020年12月09日 11:48
  */
 public class ServiceException extends RuntimeException {
 

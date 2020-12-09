@@ -1,15 +1,13 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  *
  */
 package com.github.mybatis.generator.aid;
 
-/**   
- * Copyright: Copyright (c) 2019 
- * 
- * 说明： 用户服务层</P>
- * @author XiaoQiong
+/**
+ * 说明： 用户服务层
+ * @author
  * @Date ${createTime}
  *
  */

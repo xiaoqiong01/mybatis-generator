@@ -3,7 +3,7 @@ package com.github.mybatis.generator.gonggongwenjian;
 /**
  * 前后端交互携带的请求头
  *
- * @version : RequestHeadConstant.java,v 0.1 2020年11月25日 15:49
+ * @version : RequestHeadConstant.java 2020年12月09日 15:49
  */
 public class RequestHeadConstant {
     /**

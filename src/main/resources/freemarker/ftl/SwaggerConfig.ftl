@@ -13,9 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Swagger核心配置文件
- * frxs Inc.  湖南兴盛优选电子商务有限公司.
- * Copyright (c) 2017-2019. All Rights Reserved.
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  */
 @Configuration

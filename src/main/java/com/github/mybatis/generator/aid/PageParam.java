@@ -1,17 +1,17 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  *
  */
 package com.github.mybatis.generator.aid;
 
-import java.io.Serializable;
-
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * app分页组件
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 @Data

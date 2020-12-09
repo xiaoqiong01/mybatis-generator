@@ -1,5 +1,5 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.util;
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * 说明：  获取文件路径调用创建文件
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 public class Generator {

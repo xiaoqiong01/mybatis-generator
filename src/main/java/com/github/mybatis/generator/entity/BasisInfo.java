@@ -1,5 +1,5 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.entity;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 @Data

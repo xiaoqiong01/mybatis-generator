@@ -1,14 +1,12 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.convert;
 
-/**   
-* Copyright: Copyright (c) 2019 
-* 
+/**
 * 说明：表字段类型
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  *
  * */

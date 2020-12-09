@@ -1,5 +1,5 @@
 /**
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 package com.github.mybatis.generator.util;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Set;
 /**
  * 说明：  链接数据库并获取表信息
- * @author XiaoQiong
+ * @author
  * @Date ${createTime}
  * */
 public class EntityInfoUtil {
