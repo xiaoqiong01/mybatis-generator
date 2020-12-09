@@ -88,8 +88,8 @@ public class ${entityName}Controller {
     }
 
     /**
-    * @explain 删除对象
-    */
+     * @explain 删除对象
+     */
     @PostMapping("/deleteById")
     @ApiOperation(httpMethod = SwaggerConstant.METHOD_POST,value = "删除对象")
     @ApiImplicitParam(paramType="query", name = "id", value = "对象id", required = true, dataType = "Long")
@@ -100,8 +100,8 @@ public class ${entityName}Controller {
 
 
     /**
-    * @explain 修改
-    */
+     * @explain 修改
+     */
     @PostMapping("/update")
     @ApiOperation(httpMethod = SwaggerConstant.METHOD_POST,value = "修改")
     @ApiImplicitParams({

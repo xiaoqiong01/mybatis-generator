@@ -15,10 +15,11 @@ public class MySqlToJavaUtil {
 	
 	/**
      * 说明:获取java类名
-     * @param table  表名
+     * @param tableName  表名
      * @return String
      */
-	public static String getClassName(String table) {
+	public static String getClassName(String tableName) {
+		String table = tableName.toLowerCase();
 		if(table.startsWith("t_")){
 			table = table.substring(2);
 		}
@@ -32,10 +33,11 @@ public class MySqlToJavaUtil {
 	
 	/**
      * 说明:获取字段名，把"_"后面字母变大写
-     * @param field  字段名
+     * @param fieldName  字段名
      * @return String
      */
-	public static String changeToJavaFiled(String field) {
+	public static String changeToJavaFiled(String fieldName) {
+		String field = fieldName.toLowerCase();
 		if(field.startsWith("t_")){
 			field = field.substring(2);
 		}
@@ -51,10 +53,11 @@ public class MySqlToJavaUtil {
 
 	/**
 	 * 说明:获取字段名，第一个字母大写，并且把"_"后面字母变大写
-	 * @param field  字段名
+	 * @param fieldName  字段名
 	 * @return String
 	 */
-	public static String changeToDaxiwJavaFiled(String field) {
+	public static String changeToDaxiwJavaFiled(String fieldName) {
+		String field = fieldName.toLowerCase();
 		if(field.startsWith("t_")){
 			field = field.substring(2);
 		}
