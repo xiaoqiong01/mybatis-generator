@@ -48,6 +48,19 @@ public class ${entityName}Controller {
         return null!=obj ? CommonResult.success(obj) : CommonResult.error("查询对象不存在！");
     }
 
+    /**
+    * 根据id查询（第二种传参方式，有些权限管理需要用这种）
+    */
+    @GetMapping("/getById")
+    <#if isSwagger=="true" >
+    @ApiOperation(value = "获取对象")
+    @ApiImplicitParam(paramType="query", name = "id", value = "对象id", required = true, dataType = "Long")
+    </#if>
+    public CommonResult<${entityName}> getById(Long id){
+    ${entityName} obj= ${objectName}Service.getById(id);
+    return null!=obj ? CommonResult.success(obj) : CommonResult.error("查询对象不存在！");
+    }
+
 
     /**
     * @explain 分页条件查询
