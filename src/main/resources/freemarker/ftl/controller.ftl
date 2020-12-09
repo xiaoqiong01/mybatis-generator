@@ -38,10 +38,10 @@ public class ${entityName}Controller {
      */
     @GetMapping("/getById/{id}")
    <#if isSwagger=="true" >
-       @ApiOperation(value = "获取对象")
-       @ApiImplicitParam(paramType="path", name = "id", value = "对象id", required = true, dataType = "Long")
+    @ApiOperation(value = "获取对象")
+    @ApiImplicitParam(paramType="path", name = "id", value = "对象id", required = true, dataType = "Long")
    </#if>
-    public CommonResult<${entityName}> getById(@PathVariable("id")Long id){
+    public CommonResult<${entityName}> getById(Long id){
         ${entityName} obj= ${objectName}Service.getById(id);
         return null!=obj ? CommonResult.success(obj) : CommonResult.error("查询对象不存在！");
     }
@@ -50,7 +50,7 @@ public class ${entityName}Controller {
     /**
     * @explain 分页条件查询
     */
-    @PostMapping("/getPages")
+    @GetMapping("/getPages")
     @ApiOperation(httpMethod = SwaggerConstant.METHOD_POST, value = "分页查询")
     @ApiImplicitParams({
     <#list cis as ci>
@@ -61,7 +61,7 @@ public class ${entityName}Controller {
         @ApiImplicitParam(name = "pageNum", value = "查询页码", paramType = "query", dataType = SwaggerConstant.DATA_INT, required = false),
         @ApiImplicitParam(name = "pageSize", value = "查询一页的数据量", paramType = "query", dataType = SwaggerConstant.DATA_INT, required = false)
     })
-    public CommonResult<${entityName}> getPages(@RequestBody ${entityName}Params params){
+    public CommonResult<${entityName}> getPages(<#if isSwagger=="true" >@ApiIgnore</#if> ${entityName}Params params){
         PageInfo result = ${objectName}Service.getPages(params);
         return CommonResult.success(result);
     }
