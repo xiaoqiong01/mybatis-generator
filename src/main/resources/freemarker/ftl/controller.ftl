@@ -14,8 +14,10 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import springfox.documentation.annotations.ApiIgnore;
 </#if>
 import javax.annotation.Resource;
+
 
 /**
  * ${entityComment}Controller层
