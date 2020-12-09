@@ -46,7 +46,7 @@ public class ${entityName}ServiceImpl implements ${entityName}Service  {
     }
     
     @Override
-    public PageInfo getPages(${entityName}Params params) {
+    public PageInfo<${entityName}> getPages(${entityName}Params params) {
         PageHelper.startPage(params.getPageNum(),params.getPageSize());
         List<${entityName}> ${objectName}s=${objectName}Mapper.select(params);
         return new PageInfo<>(${objectName}s);

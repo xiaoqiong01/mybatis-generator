@@ -76,8 +76,8 @@ public class ${entityName}Controller {
         @ApiImplicitParam(name = "pageNum", value = "查询页码", paramType = "query", dataType = SwaggerConstant.DATA_INT, required = false),
         @ApiImplicitParam(name = "pageSize", value = "查询一页的数据量", paramType = "query", dataType = SwaggerConstant.DATA_INT, required = false)
     })
-    public CommonResult<${entityName}> getPages(<#if isSwagger=="true" >@ApiIgnore</#if> ${entityName}Params params){
-        PageInfo result = ${objectName}Service.getPages(params);
+    public CommonResult<PageInfo<${entityName}>> getPages(<#if isSwagger=="true" >@ApiIgnore</#if> ${entityName}Params params){
+        PageInfo<${entityName}> result = ${objectName}Service.getPages(params);
         return CommonResult.success(result);
     }
 
@@ -94,12 +94,9 @@ public class ${entityName}Controller {
     </#list>
     })
     public CommonResult insert(@RequestBody ${entityName} entity){
-        if (null!=entity) {
-            boolean rsg = ${objectName}Service.save(entity);
-            return rsg ? CommonResult.success() : CommonResult.error("添加失败！");
-        }else {
-            return CommonResult.error("请传入正确参数！");
-        }
+        Assert.notNull(entity,"请传入正确参数！");
+        boolean rsg = ${objectName}Service.save(entity);
+        return rsg ? CommonResult.success() : CommonResult.error("添加失败！");
     }
 
     /**
@@ -127,12 +124,10 @@ public class ${entityName}Controller {
     </#list>
     })
     public CommonResult update(@RequestBody ${entityName} entity){
-        if (null!=entity) {
-            boolean rsg = ${objectName}Service.updateByEntity(entity);
-            return rsg ? CommonResult.success() : CommonResult.error("修改失败！");
-        }else {
-            return CommonResult.error("请传入正确参数！");
-        }
+        Assert.notNull(entity,"请传入正确参数！");
+        Assert.notNull(entity.getId(),"id不能为空！");
+        boolean rsg = ${objectName}Service.updateByEntity(entity);
+        return rsg ? CommonResult.success() : CommonResult.error("修改失败！");
     }
 
 

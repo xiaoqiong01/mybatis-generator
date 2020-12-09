@@ -18,7 +18,7 @@ public interface ${entityName}Service {
     boolean deleteById(Long id);
     
     boolean updateByEntity(${entityName} ${objectName});
-    
-    PageInfo getPages(${entityName}Params params);
+
+    PageInfo<${entityName}> getPages(${entityName}Params params);
 	
 }
