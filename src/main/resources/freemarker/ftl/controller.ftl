@@ -63,8 +63,8 @@ public class ${entityName}Controller {
 
 
     /**
-    * @explain 分页条件查询
-    */
+     * @explain 分页条件查询
+     */
     @GetMapping("/getPages")
     @ApiOperation(httpMethod = SwaggerConstant.METHOD_POST, value = "分页查询")
     @ApiImplicitParams({
@@ -82,17 +82,10 @@ public class ${entityName}Controller {
     }
 
     /**
-    * @explain 添加
-    */
+     * @explain 添加
+     */
     @PostMapping("/insert")
     @ApiOperation(httpMethod = SwaggerConstant.METHOD_POST, value = "添加对象")
-    @ApiImplicitParams({
-    <#list cis as ci>
-        <#if ci.property!="id" && ci.property!= "createTime" && ci.property!= "updateTime" && ci.property!= "updatedBy" >
-            @ApiImplicitParam(name = "${ci.property}", value = "${ci.comment}", paramType = "query", dataType = "${ci.javaType}", required = false),
-        </#if>
-    </#list>
-    })
     public CommonResult insert(@RequestBody ${entityName} entity){
         Assert.notNull(entity,"请传入正确参数！");
         boolean rsg = ${objectName}Service.save(entity);
@@ -116,13 +109,6 @@ public class ${entityName}Controller {
      */
     @PostMapping("/update")
     @ApiOperation(httpMethod = SwaggerConstant.METHOD_POST,value = "修改")
-    @ApiImplicitParams({
-    <#list cis as ci>
-        <#if ci.property!= "createTime" && ci.property!= "updateTime" && ci.property!= "createdBy" >
-        @ApiImplicitParam(name = "${ci.property}", value = "${ci.comment}", paramType = "query", dataType = "${ci.javaType}", required = false),
-        </#if>
-    </#list>
-    })
     public CommonResult update(@RequestBody ${entityName} entity){
         Assert.notNull(entity,"请传入正确参数！");
         Assert.notNull(entity.getId(),"id不能为空！");
