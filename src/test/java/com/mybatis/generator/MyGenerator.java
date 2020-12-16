@@ -14,15 +14,15 @@ public class MyGenerator {
 		public static final String AUTHOR = "xiaoqiong";
 		public static final String VERSION = "V1.0";
 		// 数据库连接信息：连接URL、用户名、秘密、数据库名information_schema
-		public static final String URL = "jdbc:mysql://127.0.0.1:3306/databaseName?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=true&serverTimezone=UTC";
+		public static final String URL = "jdbc:mysql://127.0.0.1:3306/sys?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=true&serverTimezone=UTC";
 		public static final String NAME = "root";
 		public static final String PASS = "123456";
-		public static final String DATABASE = "databaseName";
+		public static final String DATABASE = "sys";
 		// 类信息：类名、对象名（一般是【类名】的首字母小些）、类说明、时间
 		//public static final String CLASSNAME = "";
-		public static final String TABLE = "t_user_info";
-		public static final String CLASSCOMMENT = "用户信息信息";
-		public static final String TIME = "2020年12月9日";
+		public static final String TABLE = "sys_config";
+		public static final String CLASSCOMMENT = "系统信息";
+		public static final String TIME = "2020年12月16日";
 		public static final String AGILE = new Date().getTime() + "";
 		// 路径信息，分开路径方便聚合工程项目，微服务项目
 		public static final String ENTITY_URL = "com.mybatis.domain";
@@ -44,7 +44,7 @@ public class MyGenerator {
 		bi.setEntityComment(CLASSCOMMENT);
 		try {
 			bi = EntityInfoUtil.getInfo(bi);
-			String fileUrl = "D:\\自动生成代码\\实例信息\\";// 生成文件存放位置
+			String fileUrl = "D:\\自动生成代码\\系统信息\\";// 生成文件存放位置
 			//开始生成文件
 			String aa1 = Generator.createEntity(fileUrl, bi).toString();
 			String aa2 = Generator.createDao(fileUrl, bi).toString();
