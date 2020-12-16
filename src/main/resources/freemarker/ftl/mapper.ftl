@@ -12,9 +12,9 @@
 	</sql>
 
 	<insert id="insert" parameterType="${entityUrl}">
-		<SELECTKey keyProperty="id" resultType="java.lang.Long" order="AFTER" >
+		<selectKey keyProperty="id" resultType="java.lang.Long" order="AFTER" >
 			SELECT LAST_INSERT_ID() AS id
-		</SELECTKey>
+		</selectKey>
 		INSERT INTO ${table}
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 		<#list cis as ci>
@@ -58,21 +58,21 @@
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
 	</DELETE>
 
-	<SELECT id="SELECTAll" resultMap="BaseResultMap">
+	<select id="selectAll" resultMap="BaseResultMap">
 		SELECT
 		<include refid="Base_Column_List" />
 		FROM ${table}
-	</SELECT>
+	</select>
 
-	<SELECT id="SELECTById" flushCache="true" parameterType="java.lang.Long" resultMap="BaseResultMap">
+	<select id="selectById" flushCache="true" parameterType="java.lang.Long" resultMap="BaseResultMap">
 		SELECT
 		<include refid="Base_Column_List" />
 		FROM ${table}
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
-	</SELECT>
+	</select>
 
-	<SELECT id="SELECTByEntity" parameterType="${entityUrl}" resultMap="BaseResultMap">
-		SELECT
+	<select id="selectByEntity" parameterType="${entityUrl}" resultMap="BaseResultMap">
+		select
 		<include refid="Base_Column_List" />
 		FROM ${table}
 		WHERE 1=1
@@ -88,10 +88,10 @@
 			</if>
 		</#if>
 	</#list>
-	</SELECT>
+	</select>
 
-	<SELECT id="SELECTOne" parameterType="${entityUrl}" resultMap="BaseResultMap">
-		SELECT
+	<select id="selectOne" parameterType="${entityUrl}" resultMap="BaseResultMap">
+		select
 		<include refid="Base_Column_List" />
 		FROM ${table}
 		WHERE 1=1
@@ -108,7 +108,7 @@
 		</#if>
 	</#list>
 		LIMIT 1
-	</SELECT>
+	</select>
 
 
 
