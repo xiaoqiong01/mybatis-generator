@@ -35,15 +35,15 @@
 	<insert id="insertBatch">
 		INSERT INTO ${table}
 		(<#list cis as ci>
-		<#if ci.column != "UPDATEd_by" && ci.column != "create_time" && ci.column != "UPDATE_time" >${ci.column},</#if></#list>)
+		<#if ci.column != "updated_by" && ci.column != "create_time" && ci.column != "update_time" >${ci.column},</#if></#list>)
 		VALUES
 		<foreach collection="list" item="item" separator=",">
 		(<#list cis as ci>
-		<#if ci.column != "UPDATEd_by" && ci.column != "create_time" && ci.column != "UPDATE_time" ><#noparse>#{item.</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>,</#if></#list>)
+		<#if ci.column != "updated_by" && ci.column != "create_time" && ci.column != "update_time" ><#noparse>#{item.</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>,</#if></#list>)
 		</foreach>
 	</insert>
 
-	<UPDATE id="UPDATEById" parameterType="${entityUrl}">
+	<update id="UPDATEById" parameterType="${entityUrl}">
 		UPDATE ${table}
 		<set>
 		<#list cis as ci>
@@ -51,12 +51,12 @@
 		</#list>
 		</set>
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
-	</UPDATE>
+	</update>
 
-	<DELETE id="DELETEById" parameterType="java.lang.Integer">
+	<delete id="DELETEById" parameterType="java.lang.Integer">
 		DELETE FROM ${table}
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
-	</DELETE>
+	</delete>
 
 	<select id="selectAll" resultMap="BaseResultMap">
 		SELECT
