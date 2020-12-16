@@ -24,7 +24,7 @@ public class EntityInfoUtil {
 		PreparedStatement pstemt = null;
 		ResultSet rs = null;
 		//sql
-		String sql="select column_name,data_type,column_comment from information_schema.columns where table_schema='"+bi.getDatabase()+"' and table_name='"+bi.getTable()+"'";
+		String sql="select column_name,data_type,column_comment,COLUMN_TYPE from information_schema.columns where table_schema='"+bi.getDatabase()+"' and table_name='"+bi.getTable()+"'";
 		try {
 			con = DriverManager.getConnection(bi.getDbUrl(), bi.getDbName(), bi.getDbPassword());
 			pstemt = con.prepareStatement(sql);
@@ -33,10 +33,15 @@ public class EntityInfoUtil {
 				String column = rs.getString(1);
 				String jdbcType = rs.getString(2);
 				String comment = rs.getString(3);
+				String columnType = rs.getString(4);
 				PropertyInfo ci=new PropertyInfo();
 				ci.setColumn(column);
 				if (jdbcType.equalsIgnoreCase("int")) {
-					ci.setJdbcType("Integer");
+					if("int(11)".equals(columnType)){
+						ci.setJdbcType("Long");
+					}else{
+						ci.setJdbcType("Integer");
+					}
 				}else if (jdbcType.equalsIgnoreCase("datetime")) {
 					ci.setJdbcType("timestamp");
 				}else {
