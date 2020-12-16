@@ -52,6 +52,7 @@ public class EntityInfoUtil {
 				ci.setJavaType(MySqlToJavaUtil.jdbcTypeToJavaType(jdbcType));
 				//第一个字母大写的驼峰字段名
 				ci.setDaxieproperty(MySqlToJavaUtil.getClassName(column));
+				ci.setDaxieJdbcType(MySqlToJavaUtil.getDaxieJdbcType(jdbcType));
 				//设置注解类型
 				if (column.equalsIgnoreCase("id")) {
 					bi.setIdType(ci.getJavaType());

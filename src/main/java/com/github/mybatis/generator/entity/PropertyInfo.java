@@ -33,4 +33,6 @@ public class PropertyInfo implements Serializable{
 	private String javaType;
 
 	private String daxieproperty;
+
+	private String daxieJdbcType;
 }

@@ -69,4 +69,39 @@ public class MySqlTypeConvert  implements ITypeConvert {
         }
         return DbColumnType.STRING;
     }
+
+    @Override
+    public String jdbcTypeConvert(String fieldType) {
+        String t = fieldType.toLowerCase();
+        if (t.contains("char")) {
+            return "VARCHAR";
+        } else if (t.contains("bigint")) {
+            return "BIGINT";
+        } else if (t.contains("tinyint(1)")) {
+            return "INTEGER";
+        } else if (t.contains("int")) {
+            return "INTEGER";
+        } else if (t.contains("text")) {
+            return "VARCHAR";
+        } else if (t.contains("bit")) {
+            return "BOOLEAN";
+        } else if (t.contains("decimal")) {
+            return "DECIMAL";
+        } else if (t.contains("clob")) {
+            return "CLOB";
+        } else if (t.contains("blob")) {
+            return "BLOB";
+        } else if (t.contains("binary")) {
+            return "VARBINARY";
+        } else if (t.contains("float")) {
+            return "DECIMAL";
+        } else if (t.contains("double")) {
+            return "DECIMAL";
+        } else if (t.contains("json") || t.contains("enum")) {
+            return "VARCHAR";
+        } else if (t.contains("date") || t.contains("time") || t.contains("year")) {
+            return "TIMESTAMP";
+        }
+        return "VARCHAR";
+    }
 }

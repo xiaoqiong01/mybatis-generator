@@ -22,4 +22,6 @@ public interface ITypeConvert {
      * @return ignore
      */
     IColumnType processTypeConvert(DateType dateType , String fieldType);
+
+    String jdbcTypeConvert(String fieldType);
 }
