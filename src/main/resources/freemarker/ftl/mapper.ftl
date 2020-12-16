@@ -12,7 +12,10 @@
 	</sql>
 
 	<insert id="insert" parameterType="${entityUrl}">
-		insert into ${table}
+		<SELECTKey keyProperty="id" resultType="java.lang.Long" order="AFTER" >
+			SELECT LAST_INSERT_ID() AS id
+		</SELECTKey>
+		INSERT INTO ${table}
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 		<#list cis as ci>
 			<if test="${ci.property} != null ">
@@ -20,7 +23,7 @@
 			</if>
 		</#list>
 		</trim>
-		<trim prefix="values (" suffix=")" suffixOverrides=",">
+		<trim prefix="VALUES (" suffix=")" suffixOverrides=",">
 		<#list cis as ci>
 			<if test="${ci.property} != null ">
 				<#noparse>#{</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>,
@@ -30,49 +33,49 @@
 	</insert>
 
 	<insert id="insertBatch">
-		insert into ${table}
+		INSERT INTO ${table}
 		(<#list cis as ci>
-		<#if ci.column != "updated_by" && ci.column != "create_time" && ci.column != "update_time" >${ci.column},</#if></#list>)
-		values
+		<#if ci.column != "UPDATEd_by" && ci.column != "create_time" && ci.column != "UPDATE_time" >${ci.column},</#if></#list>)
+		VALUES
 		<foreach collection="list" item="item" separator=",">
 		(<#list cis as ci>
-		<#if ci.column != "updated_by" && ci.column != "create_time" && ci.column != "update_time" ><#noparse>#{item.</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>,</#if></#list>)
+		<#if ci.column != "UPDATEd_by" && ci.column != "create_time" && ci.column != "UPDATE_time" ><#noparse>#{item.</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>,</#if></#list>)
 		</foreach>
 	</insert>
 
-	<update id="updateById" parameterType="${entityUrl}">
-		update ${table}
+	<UPDATE id="UPDATEById" parameterType="${entityUrl}">
+		UPDATE ${table}
 		<set>
 		<#list cis as ci>
 			${ci.column} = <#noparse>#{</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>
 		</#list>
 		</set>
-		where id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
-	</update>
+		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
+	</UPDATE>
 
-	<delete id="deleteById" parameterType="java.lang.Integer">
-		delete from ${table}
-		where id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
-	</delete>
+	<DELETE id="DELETEById" parameterType="java.lang.Integer">
+		DELETE FROM ${table}
+		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
+	</DELETE>
 
-	<select id="selectAll" resultMap="BaseResultMap">
-		select
+	<SELECT id="SELECTAll" resultMap="BaseResultMap">
+		SELECT
 		<include refid="Base_Column_List" />
-		from ${table}
-	</select>
+		FROM ${table}
+	</SELECT>
 
-	<select id="selectById" flushCache="true" parameterType="java.lang.Long" resultMap="BaseResultMap">
-		select
+	<SELECT id="SELECTById" flushCache="true" parameterType="java.lang.Long" resultMap="BaseResultMap">
+		SELECT
 		<include refid="Base_Column_List" />
-		from ${table}
-		where id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
-	</select>
+		FROM ${table}
+		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
+	</SELECT>
 
-	<select id="selectByEntity" parameterType="${entityUrl}" resultMap="BaseResultMap">
-		select
+	<SELECT id="SELECTByEntity" parameterType="${entityUrl}" resultMap="BaseResultMap">
+		SELECT
 		<include refid="Base_Column_List" />
-		from ${table}
-		where 1=1
+		FROM ${table}
+		WHERE 1=1
 	<#list cis as ci>
 		<#if ci.daxieJdbcType != "VARCHAR">
 			<if test="${ci.property} != null ">
@@ -85,13 +88,13 @@
 			</if>
 		</#if>
 	</#list>
-	</select>
+	</SELECT>
 
-	<select id="selectOne" parameterType="${entityUrl}" resultMap="BaseResultMap">
-		select
+	<SELECT id="SELECTOne" parameterType="${entityUrl}" resultMap="BaseResultMap">
+		SELECT
 		<include refid="Base_Column_List" />
-		from ${table}
-		where 1=1
+		FROM ${table}
+		WHERE 1=1
 	<#list cis as ci>
 		<#if ci.daxieJdbcType != "VARCHAR">
 			<if test="${ci.property} != null ">
@@ -105,7 +108,7 @@
 		</#if>
 	</#list>
 		LIMIT 1
-	</select>
+	</SELECT>
 
 
 
