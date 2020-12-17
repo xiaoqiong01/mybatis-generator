@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="${daoUrl}.${entityName}Mapper">
 
-	<resultMap id="BaseResultMap" type="${entityUrl}.dto.${entityName}">
+	<resultMap id="BaseResultMap" type="${entityUrl}.${entityName}">
 		<#list cis as ci>
 			<id column="${ci.column}"  jdbcType="${ci.daxieJdbcType}" property="${ci.property}"/>
 		</#list>
@@ -11,7 +11,7 @@
 		${agile}
 	</sql>
 
-	<insert id="insert" parameterType="${entityUrl}">
+	<insert id="insert" parameterType="${entityUrl}.${entityName}">
 		<selectKey keyProperty="id" resultType="java.lang.Long" order="AFTER" >
 			SELECT LAST_INSERT_ID() AS id
 		</selectKey>
@@ -43,7 +43,7 @@
 		</foreach>
 	</insert>
 
-	<update id="updatebyId" parameterType="${entityUrl}">
+	<update id="updatebyId" parameterType="${entityUrl}.${entityName}">
 		UPDATE ${table}
 		<set>
 		<#list cis as ci>
@@ -75,7 +75,7 @@
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
 	</select>
 
-	<select id="selectByEntity" parameterType="${entityUrl}" resultMap="BaseResultMap">
+	<select id="selectByEntity" parameterType="${entityUrl}.${entityName}" resultMap="BaseResultMap">
 		select
 		<include refid="Base_Column_List" />
 		FROM ${table}
@@ -94,7 +94,7 @@
 	</#list>
 	</select>
 
-	<select id="selectOne" parameterType="${entityUrl}" resultMap="BaseResultMap">
+	<select id="selectOne" parameterType="${entityUrl}.${entityName}" resultMap="BaseResultMap">
 		select
 		<include refid="Base_Column_List" />
 		FROM ${table}
