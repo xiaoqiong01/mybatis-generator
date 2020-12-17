@@ -47,9 +47,11 @@
 		UPDATE ${table}
 		<set>
 		<#list cis as ci>
+			<#if ci.column != "id">
 			<if test="${ci.property} != null ">
 				${ci.column} = <#noparse>#{</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>
 			</if>
+			</#if>
 		</#list>
 		</set>
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
