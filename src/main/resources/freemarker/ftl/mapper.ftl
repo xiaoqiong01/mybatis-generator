@@ -49,7 +49,7 @@
 		<#list cis as ci>
 			<#if ci.column != "id" && ci.column != "created_by" && ci.column != "create_time" && ci.column != "update_time">
 				<if test="${ci.property} != null ">
-					${ci.column} = <#noparse>#{</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>
+					${ci.column} = <#noparse>#{</#noparse>${ci.property},jdbcType=${ci.daxieJdbcType}<#noparse>}</#noparse>,
 				</if>
 			</#if>
 		</#list>
