@@ -43,7 +43,7 @@
 		</foreach>
 	</insert>
 
-	<update id="updatebyId" parameterType="${entityUrl}.${entityName}">
+	<update id="updateById" parameterType="${entityUrl}.${entityName}">
 		UPDATE ${table}
 		<set>
 		<#list cis as ci>
@@ -57,7 +57,7 @@
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
 	</update>
 
-	<delete id="deletebyId" parameterType="java.lang.Integer">
+	<delete id="deleteById" parameterType="java.lang.Integer">
 		DELETE FROM ${table}
 		WHERE id = <#noparse>#{</#noparse>id,jdbcType=BIGINT<#noparse>}</#noparse>
 	</delete>
